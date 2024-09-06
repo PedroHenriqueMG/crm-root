@@ -32,7 +32,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
       }
     }
   </script>
@@ -45,7 +47,14 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@crm/root-config": "//localhost:9000/crm-root-config.js"
+        "@crm/root-config": "//localhost:9000/crm-root-config.js",
+        "@crm/aside": "//localhost:8500/crm-aside.js",
+        "@crm/blog": "//localhost:8501/crm-blog.js",
+        "@crm/dashboard": "//localhost:8502/crm-dashboard.js",
+        "@crm/footer": "//localhost:8503/crm-footer.js",
+        "@crm/header": "//localhost:8504/crm-header.js",
+        "@crm/gallery": "//localhost:8505/crm-gallery.js",
+        "@crm/components": "//localhost:8600/crm-components.js"
       }
     }
   </script>
