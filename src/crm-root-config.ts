@@ -7,6 +7,12 @@ registerApplication({
 })
 
 registerApplication({
+	name: '@single-spa/auth',
+	app: () => System.import<LifeCycles>('@crm/auth'),
+	activeWhen: location => location.pathname === '/',
+})
+
+registerApplication({
 	name: '@single-spa/gallery',
 	app: () => System.import<LifeCycles>('@crm/gallery'),
 	activeWhen: location => location.pathname === '/gallery',
